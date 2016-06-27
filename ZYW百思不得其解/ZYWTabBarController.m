@@ -41,7 +41,7 @@
     [self setupChildVC:[[ZYWMeViewController alloc]init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
    
     
-
+    NSLog(@"sb");
     
 }
 

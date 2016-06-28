@@ -11,6 +11,7 @@
 #import "ZYWNewViewController.h"
 #import "ZYWFriendTrendsViewController.h"
 #import "ZYWMeViewController.h"
+#import "ZYWtabBar.h"
 @interface ZYWTabBarController ()
 
 @end
@@ -40,7 +41,7 @@
     
     [self setupChildVC:[[ZYWMeViewController alloc]init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
    
-    
+    [self setValue:[[ZYWtabBar alloc]init] forKeyPath:@"tabBar"];
 
     
 }

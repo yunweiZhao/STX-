@@ -17,6 +17,8 @@
 		04995EF91D212F62000FC8B6 /* ZYWNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04995EF81D212F62000FC8B6 /* ZYWNewViewController.m */; };
 		04995EFC1D212F75000FC8B6 /* ZYWFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04995EFB1D212F75000FC8B6 /* ZYWFriendTrendsViewController.m */; };
 		04995EFF1D212F7D000FC8B6 /* ZYWMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04995EFE1D212F7D000FC8B6 /* ZYWMeViewController.m */; };
+		04995F021D214CB1000FC8B6 /* ZYWtabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04995F011D214CB1000FC8B6 /* ZYWtabBar.m */; };
+		04995F051D215BAE000FC8B6 /* UIView+ZYWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04995F041D215BAE000FC8B6 /* UIView+ZYWExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,11 @@
 		04995EFB1D212F75000FC8B6 /* ZYWFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWFriendTrendsViewController.m; sourceTree = "<group>"; };
 		04995EFD1D212F7D000FC8B6 /* ZYWMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWMeViewController.h; sourceTree = "<group>"; };
 		04995EFE1D212F7D000FC8B6 /* ZYWMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWMeViewController.m; sourceTree = "<group>"; };
+		04995F001D214CB1000FC8B6 /* ZYWtabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWtabBar.h; sourceTree = "<group>"; };
+		04995F011D214CB1000FC8B6 /* ZYWtabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWtabBar.m; sourceTree = "<group>"; };
+		04995F031D215BAE000FC8B6 /* UIView+ZYWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZYWExtension.h"; sourceTree = "<group>"; };
+		04995F041D215BAE000FC8B6 /* UIView+ZYWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZYWExtension.m"; sourceTree = "<group>"; };
+		04995F061D215BFA000FC8B6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +103,13 @@
 			children = (
 				04995EBC1D20FE33000FC8B6 /* AppDelegate.h */,
 				04995EBD1D20FE33000FC8B6 /* AppDelegate.m */,
+				04995F061D215BFA000FC8B6 /* PrefixHeader.pch */,
 				04995EF11D21210E000FC8B6 /* ZYWTabBarController.h */,
 				04995EF21D21210E000FC8B6 /* ZYWTabBarController.m */,
+				04995F031D215BAE000FC8B6 /* UIView+ZYWExtension.h */,
+				04995F041D215BAE000FC8B6 /* UIView+ZYWExtension.m */,
+				04995F001D214CB1000FC8B6 /* ZYWtabBar.h */,
+				04995F011D214CB1000FC8B6 /* ZYWtabBar.m */,
 				04995EF41D212F53000FC8B6 /* ZYWEssenceViewController.h */,
 				04995EF51D212F53000FC8B6 /* ZYWEssenceViewController.m */,
 				04995EF71D212F62000FC8B6 /* ZYWNewViewController.h */,
@@ -244,7 +256,9 @@
 				04995EFC1D212F75000FC8B6 /* ZYWFriendTrendsViewController.m in Sources */,
 				04995EFF1D212F7D000FC8B6 /* ZYWMeViewController.m in Sources */,
 				04995EF31D21210E000FC8B6 /* ZYWTabBarController.m in Sources */,
+				04995F021D214CB1000FC8B6 /* ZYWtabBar.m in Sources */,
 				04995EF61D212F53000FC8B6 /* ZYWEssenceViewController.m in Sources */,
+				04995F051D215BAE000FC8B6 /* UIView+ZYWExtension.m in Sources */,
 				04995EF91D212F62000FC8B6 /* ZYWNewViewController.m in Sources */,
 				04995EBB1D20FE33000FC8B6 /* main.m in Sources */,
 			);
@@ -356,6 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "ZYW百思不得其解/PrefixHeader.pch";
 				INFOPLIST_FILE = "ZYW百思不得其解/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -369,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "ZYW百思不得其解/PrefixHeader.pch";
 				INFOPLIST_FILE = "ZYW百思不得其解/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -420,6 +436,7 @@
 				04995EE81D20FE34000FC8B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04995EE91D20FE34000FC8B6 /* Build configuration list for PBXNativeTarget "ZYW百思不得其解Tests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +445,7 @@
 				04995EEB1D20FE34000FC8B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

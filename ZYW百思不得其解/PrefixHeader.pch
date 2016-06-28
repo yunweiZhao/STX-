@@ -10,5 +10,13 @@
 #define PrefixHeader_pch
 
 #import "UIView+ZYWExtension.h"
+#import "UIBarButtonItem+ZYWExtension.h"
+#ifdef DEBUG
+#define ZYWLog(...) NSLog(__VA_ARGS__)
+#else
+#define ZYWLog(...)
+#endif
+
+#define ZYWLogFunc ZYWLog(@"%s",__func__)
 
 #endif /* PrefixHeader_pch */

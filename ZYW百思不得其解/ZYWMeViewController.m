@@ -16,9 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.navigationItem.title = @"我的";
+    //设置左边的视图
+    UIBarButtonItem *settingItem = [UIBarButtonItem itemWithImage:@"mine-setting-icon" HighImage:@"mine-setting-icon-click" target:self action:@selector(meBtnTouchUpInside)];
+    UIBarButtonItem *moonItem = [UIBarButtonItem itemWithImage:@"mine-moon-icon" HighImage:@"mine-moon-icon-click" target:self action:@selector(moonBtnTouchUpInside)];
+    
+    self.navigationItem.rightBarButtonItems = @[settingItem,moonItem];
+                                            
 }
-
+-(void)meBtnTouchUpInside{
+    ZYWLogFunc;
+}
+-(void)moonBtnTouchUpInside{
+    ZYWLogFunc;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

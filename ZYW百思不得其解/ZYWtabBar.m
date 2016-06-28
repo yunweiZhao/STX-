@@ -20,6 +20,7 @@
         UIButton *button = [UIButton buttonWithType:(UIButtonTypeCustom)];
         [button setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:(UIControlStateNormal)];
         [button setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:(UIControlStateHighlighted)];
+        button.size = button.currentBackgroundImage.size;
         [self addSubview:button];
         self.button = button;
     }
@@ -30,11 +31,6 @@
     //设置中间自定义的按钮的位置跟居中位置
     CGFloat width = self.width;
     CGFloat height = self.height;
-    
-    self.button.x = 0;
-    self.button.y = 0;
-    self.button.width =self.button.currentBackgroundImage.size.width;
-    self.button.height = self.button.currentBackgroundImage.size.height;
     self.button.center = CGPointMake(width*0.5, height*0.5);
     
 //    //设置其他按钮的位置

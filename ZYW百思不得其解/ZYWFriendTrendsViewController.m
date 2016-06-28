@@ -16,9 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.navigationItem.title = @"我的关注";
+    //设置左边的视图
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" HighImage:@"friendsRecommentIcon-click" target:self action:@selector(friendsBtnTouchUpInside)];
+    
 }
-
+-(void)friendsBtnTouchUpInside{
+    ZYWLogFunc;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

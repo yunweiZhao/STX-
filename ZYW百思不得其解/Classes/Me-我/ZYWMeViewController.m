@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"我的";
+    self.view.backgroundColor = ZYWBackGrondColor;
     //设置左边的视图
     UIBarButtonItem *settingItem = [UIBarButtonItem itemWithImage:@"mine-setting-icon" HighImage:@"mine-setting-icon-click" target:self action:@selector(meBtnTouchUpInside)];
     UIBarButtonItem *moonItem = [UIBarButtonItem itemWithImage:@"mine-moon-icon" HighImage:@"mine-moon-icon-click" target:self action:@selector(moonBtnTouchUpInside)];

@@ -16,7 +16,8 @@
 #else
 #define ZYWLog(...)
 #endif
-
+#define ZYWRGB(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define ZYWBackGrondColor ZYWRGB(233, 233, 233)
 #define ZYWLogFunc ZYWLog(@"%s",__func__)
 
 #endif /* PrefixHeader_pch */

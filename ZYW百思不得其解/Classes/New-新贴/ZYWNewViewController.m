@@ -1,27 +1,28 @@
 //
-//  ZYWFriendTrendsViewController.m
+//  ZYWNewViewController.m
 //  ZYW百思不得其解
 //
 //  Created by mac on 16/6/27.
 //  Copyright © 2016年 Bonway. All rights reserved.
 //
 
-#import "ZYWFriendTrendsViewController.h"
+#import "ZYWNewViewController.h"
 
-@interface ZYWFriendTrendsViewController ()
+@interface ZYWNewViewController ()
 
 @end
 
-@implementation ZYWFriendTrendsViewController
+@implementation ZYWNewViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"我的关注";
+    self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    self.view.backgroundColor = ZYWBackGrondColor;
     //设置左边的视图
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" HighImage:@"friendsRecommentIcon-click" target:self action:@selector(friendsBtnTouchUpInside)];
-    
+   
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" HighImage:@"MainTagSubIconClick" target:self action:@selector(leftBtnTouchUpInside)];
 }
--(void)friendsBtnTouchUpInside{
+-(void)leftBtnTouchUpInside{
     ZYWLogFunc;
 }
 - (void)didReceiveMemoryWarning {
